@@ -10,7 +10,7 @@ Welcome to Warp, the ultimate download manager that revolutionizes the way you d
 
 Before you begin, make sure you have the following prerequisites in place:
 
-- FFmpeg: Ensure you have FFmpeg installed in your device if you want to make use of all features of Warp.
+- FFmpeg: Make sure you have FFmpeg installed on your device to enjoy all the exciting features of Warp, including the ability to download high-resolution videos from YouTube and more.
 
 <!-- 
 ## Installation
