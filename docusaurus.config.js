@@ -44,13 +44,14 @@ const config = {
           editUrl:
             'https://github.com/warpdl/website/tree/master/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/warpdl/website/tree/master/',
-        },
+        blog: false,
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl:
+        //     'https://github.com/warpdl/website/tree/master/',
+        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -70,13 +71,28 @@ const config = {
           src: 'img/logo.png',
         },
         items: [
+          // {
+          //   type: 'docSidebar',
+          //   sidebarId: 'tutorialSidebar',
+          //   position: 'left',
+          //   label: 'Documentation',
+          // },
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            to: '/docs/intro',
+            label: 'Introduction',
             position: 'left',
-            label: 'Documentation',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            to: '/docs/category/installation-guide',
+            label: 'Installation',
+            position: 'left',
+          },
+          {
+            to: '/docs/category/usage-guide',
+            label: 'Usage',
+            position: 'left',
+          },
+          // {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/warpdl/',
             label: 'GitHub',
@@ -88,11 +104,19 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Documentation',
             items: [
               {
-                label: 'Documentation',
+                label: 'Introduction',
                 to: '/docs/intro',
+              },
+              {
+                label: 'Installation Guide',
+                to: '/docs/category/installation-guide',
+              },
+              {
+                label: 'Usage Guide',
+                to: '/docs/category/usage-guide',
               },
             ],
           },
@@ -113,19 +137,19 @@ const config = {
               },
             ],
           },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/warpdl',
-              },
-            ],
-          },
+          // {
+          //   title: 'More',
+          //   items: [
+          //     // {
+          //     //   label: 'Blog',
+          //     //   to: '/blog',
+          //     // },
+          //     {
+          //       label: 'GitHub',
+          //       href: 'https://github.com/warpdl',
+          //     },
+          //   ],
+          // },
         ],
         copyright: `Copyright ©${new Date().getFullYear()} WarpDL, Inc.`,
       },
